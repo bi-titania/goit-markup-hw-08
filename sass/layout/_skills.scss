@@ -1,0 +1,74 @@
+.skills {
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.skills_list {
+  display: block;
+  margin-bottom: -30px;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: -35px;
+    display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.skills__item {
+  width: auto;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    width: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+    flex-wrap: nowrap;
+  }
+}
+.skills__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+.skills__text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.skills__item::before {
+  content: '';
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-color: var(--item-color);
+  background-position: center;
+}
+
+.skills__icon-1::before {
+  background-image: url(../img/1_antenna.svg);
+}
+.skills__icon-2::before {
+  background-image: url(../img/2_clock.svg);
+}
+.skills__icon-3::before {
+  background-image: url(../img/3_diagram.svg);
+}
+.skills__icon-4::before {
+  background-image: url(../img/4_astronaut.svg);
+}
